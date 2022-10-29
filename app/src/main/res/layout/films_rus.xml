@@ -26,4 +26,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/wouwenka" />
+
+    <ImageView
+        android:id="@+id/forest"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toBottomOf="@id/green_mile"
+        app:srcCompat="@drawable/forest" />
 </androidx.constraintlayout.widget.ConstraintLayout>
