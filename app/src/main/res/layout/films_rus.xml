@@ -3,26 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
     <ImageView
         android:id="@+id/green_mile"
         android:layout_width="150dp"
-        android:layout_height="213dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
         android:adjustViewBounds="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/green_mile" />
+        app:layout_constraintBottom_toTopOf="@id/forest"
+        app:srcCompat="@drawable/green_mile1" />
 
     <ImageView
         android:id="@+id/pizw"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_width="153dp"
+        android:layout_height="225dp"
         android:layout_marginEnd="40dp"
         android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@id/fight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/wouwenka" />
@@ -31,10 +32,21 @@
         android:id="@+id/forest"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
         android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/green_mile"
         app:srcCompat="@drawable/forest" />
+
+    <ImageView
+        android:id="@+id/fight"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pizw"
+        app:srcCompat="@drawable/fight_club"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
