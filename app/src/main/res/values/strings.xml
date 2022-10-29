@@ -3,5 +3,10 @@
     <string name="kinopoisk">Kinopoisk (Russian: Кинопоиск, a portmanteau of "cinema" and "search") is a Russian online database of information related to films, TV shows including cast, production team, biographies, plot summaries, ratings, and reviews. Since 2018 (as КиноПоиск HD) also a subscription video on demand streaming service with several thousand films, TV series, cartoons and including premieres and exclusive ones, has also been available</string>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
+    <string name="subscribe">Subscription rates</string>
+    <string name="subscribe1">Family</string>
+    <string name="subscribe2">Duo</string>
+    <string name="subscribe3">Solo</string>
+
 
 </resources>

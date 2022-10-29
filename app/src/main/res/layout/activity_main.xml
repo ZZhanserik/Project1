@@ -69,6 +69,34 @@
         app:layout_constraintTop_toBottomOf="@id/startButton"
         tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/subs1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subscribe1"
+        />
+    <TextView
+        android:id="@+id/subs2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subscribe2"
+        />
+    <TextView
+        android:id="@+id/subs3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subscribe3"
+        />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/subscribe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="subs1, subs2, subs3"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintTop_toBottomOf="@id/about"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
