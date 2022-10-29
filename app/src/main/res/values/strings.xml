@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Project1</string>
-    <string name="startValue">Начать поиск!</string>
+    <string name="title">Let\'s find you a movie</string>
 </resources>
