@@ -7,9 +7,23 @@
 
     <ImageView
         android:id="@+id/green_mile"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
         android:adjustViewBounds="true"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/green_mile" />
+
+    <ImageView
+        android:id="@+id/pizw"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wouwenka" />
 </androidx.constraintlayout.widget.ConstraintLayout>
