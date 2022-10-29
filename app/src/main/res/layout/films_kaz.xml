@@ -19,5 +19,14 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/Anaga_Aparar_Zhol" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="174dp"
+        android:layout_height="296dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/qazaq"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
