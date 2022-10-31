@@ -111,7 +111,6 @@
         android:id="@+id/subscribe"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
         android:outlineAmbientShadowColor="@color/white"
         android:outlineSpotShadowColor="@color/white"
         app:constraint_referenced_ids="subs1, subs2, subs3"
@@ -121,36 +120,34 @@
         app:layout_constraintHorizontal_bias="0.0"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/label" />
+        app:layout_constraintTop_toBottomOf="@+id/subsTitle" />
 
     <TextView
         android:id="@+id/mainTitle"
         android:layout_width="113dp"
         android:layout_height="39dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
         android:text="@string/title0"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:flow_horizontalBias="0"
-        app:flow_wrapMode="chain"
-
-
-        app:layout_constraintTop_toBottomOf="@id/banner"
-        />
+        app:flow_wrapMode="aligned"
+        app:layout_constraintEnd_toStartOf="@+id/startButton"
+        app:layout_constraintTop_toBottomOf="@id/banner" />
 
     <TextView
         android:id="@+id/subsTitle"
         android:layout_width="209dp"
         android:layout_height="55dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="30dp"
         android:text="@string/subscribe"
         android:textColor="@color/white"
         android:textSize="25sp"
-        app:flow_wrapMode="chain"
-        app:layout_constraintTop_toBottomOf="@id/about" />
+        app:flow_wrapMode="aligned"
+        app:layout_constraintEnd_toEndOf="@+id/about"
+        app:layout_constraintStart_toStartOf="@+id/about"
+        app:layout_constraintTop_toBottomOf="@+id/about" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
