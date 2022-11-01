@@ -9,7 +9,11 @@
         android:id="@+id/main_fragment"
         android:name="com.example.project1.Main_fragment"
         android:label="fragment_main_fragment"
-        tools:layout="@layout/fragment_main_fragment" />
+        tools:layout="@layout/fragment_main_fragment" >
+        <action
+            android:id="@+id/action_main_fragment_to_fragCat"
+            app:destination="@id/fragCat" />
+    </fragment>
     <fragment
         android:id="@+id/fragRus"
         android:name="com.example.project1.Film_Rus"
@@ -24,5 +28,12 @@
         android:id="@+id/fragCat"
         android:name="com.example.project1.Catalog"
         android:label="catalog"
-        tools:layout="@layout/catalog" />
+        tools:layout="@layout/catalog" >
+        <action
+            android:id="@+id/action_fragCat_to_fragRus"
+            app:destination="@id/fragRus" />
+        <action
+            android:id="@+id/action_fragCat_to_fragKaz"
+            app:destination="@id/fragKaz" />
+    </fragment>
 </navigation>
