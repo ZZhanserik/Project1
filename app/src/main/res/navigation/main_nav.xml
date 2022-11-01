@@ -3,15 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/mainActivity">
+    app:startDestination="@id/main_fragment">
 
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.project1.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
-    <activity
-        android:id="@+id/catalog3"
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.example.project1.Main_fragment"
+        android:label="fragment_main_fragment"
+        tools:layout="@layout/fragment_main_fragment" />
+    <fragment
+        android:id="@+id/fragRus"
+        android:name="com.example.project1.Film_Rus"
+        android:label="films_rus"
+        tools:layout="@layout/films_rus" />
+    <fragment
+        android:id="@+id/fragKaz"
+        android:name="com.example.project1.Film_kaz"
+        android:label="films_kaz"
+        tools:layout="@layout/films_kaz" />
+    <fragment
+        android:id="@+id/fragCat"
         android:name="com.example.project1.Catalog"
         android:label="catalog"
         tools:layout="@layout/catalog" />
