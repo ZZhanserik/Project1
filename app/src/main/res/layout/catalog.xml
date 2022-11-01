@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/catalog"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="113dp"
+            android:layout_height="39dp"
+            android:text="@string/title0"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintEnd_toEndOf="@+id/banner"
+            app:layout_constraintStart_toStartOf="@+id/banner"
+            app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:text="@string/title"
+            android:textColor="@color/white"
+            android:textFontWeight="@integer/material_motion_duration_medium_2"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/mainTitle"
+            app:layout_constraintStart_toStartOf="@+id/mainTitle"
+            app:layout_constraintTop_toBottomOf="@+id/mainTitle" />
+
+
+
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/startButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:layout_marginTop="28dp"-->
+<!--            android:layout_marginEnd="52dp"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            android:contentDescription="@string/title0"-->
+<!--            android:src="@drawable/start"-->
+<!--             />-->
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:constraint_referenced_ids="title, mainTitle"
+            android:orientation="vertical"
+            app:barrierDirection="bottom"
+            tools:ignore="MissingConstraints" />
+
+
+
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="92dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <TextView
+            android:id="@+id/subs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subscribe1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/subs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subscribe2"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/subs3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subscribe3"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/subscribe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            app:constraint_referenced_ids="subs1, subs2, subs3"
+            app:flow_horizontalBias="0"
+            app:flow_wrapMode="chain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subsTitle" />
+
+
+        <TextView
+            android:id="@+id/subsTitle"
+            android:layout_width="209dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/subscribe"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintEnd_toEndOf="@+id/title"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
