@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import androidx.navigation.fragment.findNavController
 
 class Main_fragment : Fragment() {
 
@@ -20,6 +21,7 @@ class Main_fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val mF = view.findViewById<ImageButton>(R.id.startButton)
-        mF.setOnClickListener {  }
+        val controller = findNavController()
+        mF.setOnClickListener { controller.navigate(R.id.fragCat) }
     }
 }
