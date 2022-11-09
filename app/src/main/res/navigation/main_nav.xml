@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/main_fragment"
-        android:name="com.example.project1.Main_fragment"
+        android:name="com.example.project1.MainFragment"
         android:label="fragment_main_fragment"
         tools:layout="@layout/fragment_main_fragment" >
         <action
@@ -16,12 +16,12 @@
     </fragment>
     <fragment
         android:id="@+id/fragRus"
-        android:name="com.example.project1.Film_Rus"
+        android:name="com.example.project1.FilmRus"
         android:label="films_rus"
         tools:layout="@layout/films_rus" />
     <fragment
         android:id="@+id/fragKaz"
-        android:name="com.example.project1.Film_kaz"
+        android:name="com.example.project1.FilmKaz"
         android:label="films_kaz"
         tools:layout="@layout/films_kaz" />
     <fragment
