@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class Film_Rus : Fragment() {
+class FilmRus : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
