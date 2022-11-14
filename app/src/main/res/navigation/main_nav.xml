@@ -3,37 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/main_fragment">
-
+    app:startDestination="@id/home3">
     <fragment
-        android:id="@+id/main_fragment"
-        android:name="com.example.project1.MainFragment"
-        android:label="fragment_main_fragment"
-        tools:layout="@layout/fragment_main_fragment" >
+        android:id="@+id/home3"
+        android:name="com.example.project1.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_main_fragment_to_fragCat"
-            app:destination="@id/fragCat" />
+            android:id="@+id/action_home3_to_catalog2"
+            app:destination="@id/catalog2" />
     </fragment>
     <fragment
-        android:id="@+id/fragRus"
-        android:name="com.example.project1.FilmRus"
-        android:label="films_rus"
-        tools:layout="@layout/films_rus" />
+        android:id="@+id/catalog2"
+        android:name="com.example.project1.Catalog"
+        android:label="catalog"
+        tools:layout="@layout/fragment_films" >
+        <action
+            android:id="@+id/action_catalog2_to_filmKaz"
+            app:destination="@id/filmKaz" />
+        <action
+            android:id="@+id/action_catalog2_to_filmRus"
+            app:destination="@id/filmRus" />
+    </fragment>
     <fragment
-        android:id="@+id/fragKaz"
+        android:id="@+id/filmKaz"
         android:name="com.example.project1.FilmKaz"
         android:label="films_kaz"
         tools:layout="@layout/films_kaz" />
     <fragment
-        android:id="@+id/fragCat"
-        android:name="com.example.project1.Catalog"
-        android:label="catalog"
-        tools:layout="@layout/catalog" >
-        <action
-            android:id="@+id/action_fragCat_to_fragRus"
-            app:destination="@id/fragRus" />
-        <action
-            android:id="@+id/action_fragCat_to_fragKaz"
-            app:destination="@id/fragKaz" />
-    </fragment>
+        android:id="@+id/filmRus"
+        android:name="com.example.project1.FilmRus"
+        android:label="films_rus"
+        tools:layout="@layout/films_rus" />
 </navigation>

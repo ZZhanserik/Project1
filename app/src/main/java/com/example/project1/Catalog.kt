@@ -14,7 +14,7 @@ class Catalog : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.catalog, container, false)
+        return inflater.inflate(R.layout.fragment_films, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -22,7 +22,7 @@ class Catalog : Fragment() {
         val bF1 = view.findViewById<ImageButton>(R.id.rus)
         val bF2 = view.findViewById<ImageButton>(R.id.kaz)
         val cont2 = findNavController()
-        bF1.setOnClickListener { cont2.navigate(R.id.fragRus) }
-        bF2.setOnClickListener { cont2.navigate(R.id.fragKaz) }
+        bF1.setOnClickListener { cont2.navigate(R.id.filmKaz) }
+        bF2.setOnClickListener { cont2.navigate(R.id.filmRus) }
     }
 }

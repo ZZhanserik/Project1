@@ -15,13 +15,13 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val mF = view.findViewById<ImageButton>(R.id.startButton)
         val controller = findNavController()
-        mF.setOnClickListener { controller.navigate(R.id.fragCat) }
+        mF.setOnClickListener { controller.navigate(R.id.catalog2) }
     }
 }
