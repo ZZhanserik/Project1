@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.navigation.fragment.findNavController
 
-class Main_fragment : Fragment() {
+class MainFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
