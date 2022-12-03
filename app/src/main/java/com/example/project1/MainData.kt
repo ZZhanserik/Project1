@@ -1,0 +1,98 @@
+package com.example.project1
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.text.TextUtils
+import android.util.Log
+import android.widget.Toast
+import com.example.project1.databinding.ActivityMainBinding
+import com.example.project1.databinding.MainDataBinding
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+
+class MainData: AppCompatActivity(){
+    private lateinit var appDb : AppDatabase
+    lateinit var binding : MainDataBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = MainDataBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        appDb = AppDatabase.getDatabase(this)
+        binding.btnWriteData.setOnClickListener {
+            writeData()
+        }
+
+        binding.btnReadData.setOnClickListener {
+            readData()
+        }
+
+        binding.btnDeleteAll.setOnClickListener {
+
+            GlobalScope.launch {
+
+                appDb.loginDao().deleteAll()
+
+            }
+
+        }
+    }
+
+    private fun writeData(){
+
+        val firstName = binding.etFirstName.text.toString()
+        val lastName = binding.etLastName.text.toString()
+        val rollNo = binding.etRollNo.text.toString()
+
+        if(firstName.isNotEmpty() && lastName.isNotEmpty() && rollNo.isNotEmpty()     ) {
+            val user = LogIn(
+                null, firstName, lastName, rollNo.toInt()
+            )
+            GlobalScope.launch(Dispatchers.IO) {
+
+                appDb.loginDao().insert(user)
+            }
+
+            binding.etFirstName.text.clear()
+            binding.etLastName.text.clear()
+            binding.etRollNo.text.clear()
+
+            Toast.makeText(this@MainData,"Successfully written",Toast.LENGTH_SHORT).show()
+        }else Toast.makeText(this@MainData,"PLease Enter Data",Toast.LENGTH_SHORT).show()
+
+    }
+
+    private fun readData(){
+
+        val rollNo = binding.etRollNoRead.text.toString()
+
+        if (rollNo.isNotEmpty()){
+
+            lateinit var user : LogIn
+
+            GlobalScope.launch {
+
+                user = appDb.loginDao().findByRoll(rollNo.toInt())
+                Log.d("Robin Data",user.toString())
+                displayData(user)
+
+            }
+
+        }else Toast.makeText(this@MainData,"Please enter the data", Toast.LENGTH_SHORT).show()
+
+    }
+
+    private suspend fun displayData(user: LogIn){
+
+        withContext(Dispatchers.Main){
+
+            binding.tvFirstName.text = user.firstName
+            binding.tvLastName.text = user.lastName
+            binding.tvRollNo.text = user.password.toString()
+
+        }
+
+    }
+}
