@@ -2,20 +2,16 @@ package com.example.project1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
 import android.util.Log
 import android.widget.Toast
-import com.example.project1.databinding.ActivityMainBinding
 import com.example.project1.databinding.MainDataBinding
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 
 class MainData: AppCompatActivity(){
     private lateinit var appDb : AppDatabase
-    lateinit var binding : MainDataBinding
+    private lateinit var binding : MainDataBinding
 
+    @OptIn(DelicateCoroutinesApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = MainDataBinding.inflate(layoutInflater)
@@ -40,6 +36,7 @@ class MainData: AppCompatActivity(){
         }
     }
 
+    @OptIn(DelicateCoroutinesApi::class)
     private fun writeData(){
 
         val firstName = binding.etFirstName.text.toString()
@@ -64,6 +61,7 @@ class MainData: AppCompatActivity(){
 
     }
 
+    @OptIn(DelicateCoroutinesApi::class)
     private fun readData(){
 
         val rollNo = binding.etRollNoRead.text.toString()
