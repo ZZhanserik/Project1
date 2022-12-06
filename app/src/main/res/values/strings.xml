@@ -20,6 +20,8 @@
     <string name="new_password">New password</string>
     <string name="save">Save</string>
     <string name="delete_all">Delete All</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 
 </resources>

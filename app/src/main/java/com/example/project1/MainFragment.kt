@@ -1,11 +1,15 @@
 package com.example.project1
 
+import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 
 class MainFragment : Fragment() {
@@ -21,7 +25,9 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val mF = view.findViewById<ImageButton>(R.id.startButton)
+        val dF = view.findViewById<Button>(R.id.loginButton)
         val controller = findNavController()
         mF.setOnClickListener { controller.navigate(R.id.fragCat) }
+        dF.setOnClickListener { controller.navigate(R.id.mainData) }
     }
 }

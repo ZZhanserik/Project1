@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_main_fragment_to_fragCat"
             app:destination="@id/fragCat" />
+        <action
+            android:id="@+id/action_main_fragment_to_mainData"
+            app:destination="@id/mainData" />
     </fragment>
     <fragment
         android:id="@+id/fragRus"
@@ -36,4 +39,9 @@
             android:id="@+id/action_fragCat_to_fragKaz"
             app:destination="@id/fragKaz" />
     </fragment>
+    <activity
+        android:id="@+id/mainData"
+        android:name="com.example.project1.MainData"
+        android:label="main_data"
+        tools:layout="@layout/main_data" />
 </navigation>

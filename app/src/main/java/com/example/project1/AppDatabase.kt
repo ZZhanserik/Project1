@@ -1,6 +1,5 @@
 package com.example.project1
 
-import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
@@ -15,7 +14,7 @@ abstract class AppDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE : AppDatabase? = null
 
-        fun getDatabase(context: Context): AppDatabase{
+        fun getDatabase(context: MainData): AppDatabase{
 
             val tempInstance = INSTANCE
             if(tempInstance != null){
