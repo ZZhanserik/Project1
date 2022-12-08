@@ -1,6 +1,6 @@
 <resources>
     <string name="title">Let\'s find you a movie</string>
-    <string name="kinopoisk">Kinopoisk (Russian: Кинопоиск, a portmanteau of "cinema" and "search") is a Russian online database of information related to films, TV shows including cast, production team, biographies, plot summaries, ratings, and reviews. Since 2018 (as КиноПоиск HD) also a subscription video on demand streaming service with several thousand films, TV series, cartoons and including premieres and exclusive ones, has also been available</string>
+    <string name="kinopoisk">Kinopoisk (Russian: Кинопоиск, a portmanteau of "cinema" and "search") is a Russian online database of information related to films.</string>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <string name="subscribe">Subscription rates</string>
@@ -12,6 +12,20 @@
     <string name="todo">TODO</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_in">Log In</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="password">Password</string>
+    <string name="lod_in">Lod in</string>
+    <string name="new_password">Write password</string>
+    <string name="save">Save</string>
+    <string name="delete_all">Delete All</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="search">Search</string>
+    <string name="key">Key</string>
+    <string name="log_innn">Log in</string>
+    <string name="keyyy">Key</string>
 
 
 </resources>

@@ -59,8 +59,8 @@
 
         <TextView
             android:id="@+id/about"
-            android:layout_width="346dp"
-            android:layout_height="148dp"
+            android:layout_width="327dp"
+            android:layout_height="53dp"
             android:layout_marginTop="40dp"
             android:text="@string/kinopoisk"
             android:textColor="@color/white"
@@ -140,7 +140,7 @@
             android:id="@+id/subsTitle"
             android:layout_width="209dp"
             android:layout_height="55dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:text="@string/subscribe"
             android:textColor="@color/white"
             android:textSize="25sp"
@@ -148,6 +148,18 @@
             app:layout_constraintEnd_toEndOf="@+id/about"
             app:layout_constraintStart_toStartOf="@+id/about"
             app:layout_constraintTop_toBottomOf="@+id/about" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="Log In"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/subs2"
+            app:layout_constraintStart_toStartOf="@+id/subs2"
+            app:layout_constraintTop_toBottomOf="@+id/subs2" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
