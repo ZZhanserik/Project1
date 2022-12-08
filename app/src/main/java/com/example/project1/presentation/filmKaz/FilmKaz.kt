@@ -1,11 +1,11 @@
-package com.example.project1.filmKaz
+package com.example.project1.presentation.filmKaz
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.project1.ItemModel
+import com.example.project1.domain.ItemModel
 import com.example.project1.R
 import com.example.project1.databinding.FilmsKazBinding
 

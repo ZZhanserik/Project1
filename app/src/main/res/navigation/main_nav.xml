@@ -6,7 +6,7 @@
     app:startDestination="@id/main_fragment">
     <fragment
         android:id="@+id/main_fragment"
-        android:name="com.example.project1.MainFragment"
+        android:name="com.example.project1.presentation.MainFragment"
         android:label="fragment_main_fragment"
         tools:layout="@layout/fragment_main_fragment" >
         <action
@@ -18,17 +18,17 @@
     </fragment>
     <fragment
         android:id="@+id/fragRus"
-        android:name="com.example.project1.filmRus.FilmRus"
+        android:name="com.example.project1.presentation.filmRus.FilmRus"
         android:label="films_rus"
         tools:layout="@layout/films_rus" />
     <fragment
         android:id="@+id/fragKaz"
-        android:name="com.example.project1.filmKaz.FilmKaz"
+        android:name="com.example.project1.presentation.filmKaz.FilmKaz"
         android:label="films_kaz"
         tools:layout="@layout/films_kaz" />
     <fragment
         android:id="@+id/fragCat"
-        android:name="com.example.project1.Catalog"
+        android:name="com.example.project1.presentation.Catalog"
         android:label="catalog"
         tools:layout="@layout/catalog" >
         <action
@@ -40,7 +40,7 @@
     </fragment>
     <activity
         android:id="@+id/mainData"
-        android:name="com.example.project1.MainData"
+        android:name="com.example.project1.data.room.MainData"
         android:label="main_data"
         tools:layout="@layout/main_data" />
 </navigation>

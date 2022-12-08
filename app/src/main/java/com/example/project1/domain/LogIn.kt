@@ -1,4 +1,4 @@
-package com.example.project1
+package com.example.project1.domain
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

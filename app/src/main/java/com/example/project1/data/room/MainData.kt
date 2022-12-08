@@ -1,13 +1,11 @@
-package com.example.project1
+package com.example.project1.data.room
 
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.project1.databinding.MainDataBinding
+import com.example.project1.domain.LogIn
 import kotlinx.coroutines.*
 
 class MainData(): AppCompatActivity() {

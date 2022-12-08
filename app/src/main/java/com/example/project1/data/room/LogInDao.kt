@@ -1,6 +1,7 @@
-package com.example.project1
+package com.example.project1.data.room
 
 import androidx.room.*
+import com.example.project1.domain.LogIn
 
 @Dao
 interface LogInDao {

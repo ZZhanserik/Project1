@@ -1,9 +1,9 @@
-package com.example.project1.filmKaz
+package com.example.project1.presentation.filmKaz
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.project1.ItemModel
+import com.example.project1.domain.ItemModel
 import com.example.project1.databinding.ItemMovieBinding
 
 
