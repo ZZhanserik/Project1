@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
     app:startDestination="@id/main_fragment">
-
     <fragment
         android:id="@+id/main_fragment"
         android:name="com.example.project1.MainFragment"
@@ -13,6 +12,9 @@
         <action
             android:id="@+id/action_main_fragment_to_fragCat"
             app:destination="@id/fragCat" />
+        <action
+            android:id="@+id/action_main_fragment_to_mainData"
+            app:destination="@id/mainData" />
     </fragment>
     <fragment
         android:id="@+id/fragRus"
@@ -21,7 +23,7 @@
         tools:layout="@layout/films_rus" />
     <fragment
         android:id="@+id/fragKaz"
-        android:name="com.example.project1.FilmKaz"
+        android:name="com.example.project1.filmKaz.FilmKaz"
         android:label="films_kaz"
         tools:layout="@layout/films_kaz" />
     <fragment
@@ -36,4 +38,9 @@
             android:id="@+id/action_fragCat_to_fragKaz"
             app:destination="@id/fragKaz" />
     </fragment>
+    <activity
+        android:id="@+id/mainData"
+        android:name="com.example.project1.MainData"
+        android:label="main_data"
+        tools:layout="@layout/main_data" />
 </navigation>
