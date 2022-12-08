@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.example.project1.R
 
 class MainFragment : Fragment() {
