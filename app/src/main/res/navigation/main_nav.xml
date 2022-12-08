@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragRus"
-        android:name="com.example.project1.FilmRus"
+        android:name="com.example.project1.filmRus.FilmRus"
         android:label="films_rus"
         tools:layout="@layout/films_rus" />
     <fragment
