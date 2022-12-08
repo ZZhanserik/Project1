@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.project1.databinding.ItemMovieBinding
 
 class FilmKazAdapter(private val mList: List<ItemsModel>):Adapter<FilmKazViewHolder>() {
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmKazViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val binding = ItemMovieBinding.inflate(layoutInflater, parent, false)

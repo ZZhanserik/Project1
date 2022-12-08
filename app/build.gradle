@@ -1,4 +1,8 @@
 buildscript {
+
+    repositories {
+        google()
+    }
     ext {
         kotlin_version = '1.7.10'
         archLifecycleVersion = '1.1.1'
@@ -40,7 +44,6 @@ android {
             viewBinding true
         }
     }
-
     buildFeatures {
         viewBinding = true
     }
@@ -52,9 +55,6 @@ android {
         jvmTarget = '1.8'
     }
 }
-
-
-
 dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
     implementation "androidx.navigation:navigation-ui-ktx:2.5.3"

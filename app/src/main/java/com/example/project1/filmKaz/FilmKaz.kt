@@ -9,7 +9,6 @@ import com.example.project1.R
 import com.example.project1.databinding.FilmsKazBinding
 
 class FilmKaz : Fragment() {
-
     lateinit var binding: FilmsKazBinding
 
     override fun onCreateView(
