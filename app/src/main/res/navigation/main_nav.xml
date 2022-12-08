@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
     app:startDestination="@id/main_fragment">
-
     <fragment
         android:id="@+id/main_fragment"
         android:name="com.example.project1.MainFragment"
@@ -24,7 +23,7 @@
         tools:layout="@layout/films_rus" />
     <fragment
         android:id="@+id/fragKaz"
-        android:name="com.example.project1.FilmKaz"
+        android:name="com.example.project1.filmKaz.FilmKaz"
         android:label="films_kaz"
         tools:layout="@layout/films_kaz" />
     <fragment
