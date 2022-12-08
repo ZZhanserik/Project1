@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.project1.R
 
@@ -24,7 +25,7 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val mF = view.findViewById<ImageButton>(R.id.startButton)
         val dF = view.findViewById<Button>(R.id.loginButton)
-        val controller = findNavController()
+        val controller = view.findNavController()
         mF.setOnClickListener { controller.navigate(R.id.fragCat) }
         dF.setOnClickListener { controller.navigate(R.id.mainData) }
     }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_room_activity"
+    app:startDestination="@id/mainData">
+
+    <activity
+        android:id="@+id/mainData"
+        android:name="com.example.project1.data.room.k.room.MainData"
+        android:label="main_data"
+        tools:layout="@layout/main_data" >
+    </activity>
+
+</navigation>

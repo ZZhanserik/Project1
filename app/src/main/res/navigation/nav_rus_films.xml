@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_rus_films"
+    app:startDestination="@id/rus_films">
+
+
+    <fragment
+        android:id="@+id/rus_films"
+        android:name="com.example.project1.presentation.filmRus.FilmRus"
+        android:label="fragment_main_fragment"
+        tools:layout="@layout/films_rus" >
+
+    </fragment>
+
+
+</navigation>

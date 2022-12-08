@@ -1,9 +1,8 @@
-package com.example.project1.data.room
+package com.example.project1.data.room.k.room
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.project1.domain.LogIn
-import com.example.project1.data.room.MainData
 
 @Database(entities = [LogIn :: class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
