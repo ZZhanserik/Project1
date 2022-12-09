@@ -1,4 +1,4 @@
-package com.example.project1.data.room.k.room
+package com.example.project1.data.room
 
 import android.os.Bundle
 import android.util.Log

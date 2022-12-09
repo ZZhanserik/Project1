@@ -7,7 +7,7 @@
 
     <activity
         android:id="@+id/mainData"
-        android:name="com.example.project1.data.room.k.room.MainData"
+        android:name="com.example.project1.data.room.MainData"
         android:label="main_data"
         tools:layout="@layout/main_data" >
     </activity>
