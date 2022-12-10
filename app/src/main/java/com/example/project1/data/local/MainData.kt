@@ -1,4 +1,4 @@
-package com.example.project1.data.room
+package com.example.project1.data.local
 
 import android.os.Bundle
 import android.util.Log

@@ -26,8 +26,8 @@ class FilmRus : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val data = ItemModel(R.drawable.green_mile1, "asdamsdkaskdna")
-        val adapter = FilmRusAdapter(List(6){data})
+        val data = ItemModel(R.drawable.green_mile1, "asdamsdkaskdna", "dsfafas")
+        val adapter = FilmRusAdapter(List(6) { data })
         binding.rvFilmsRus.adapter = adapter
     }
 }

@@ -7,7 +7,7 @@ import com.example.project1.databinding.ItemMovieBinding
 class FilmRusViewHolder(private val binding: ItemMovieBinding): RecyclerView.ViewHolder(binding.root) {
 
     fun bind(movie: ItemModel){
-        binding.image.setImageResource(movie.image)
+        binding.image.setImageResource(movie.img)
         binding.title.text = movie.title
     }
 }

@@ -12,7 +12,7 @@
         android:id="@+id/main_fragment"
         android:name="com.example.project1.presentation.MainFragment"
         android:label="fragment_main_fragment"
-        tools:layout="@layout/fragment_main_fragment" >
+        tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/fragCat"
             app:destination="@id/nav_catalog" />
