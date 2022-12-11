@@ -13,7 +13,6 @@ import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 class MovieDetailsRuBottomSheet(val movieId:Int): BottomSheetDialogFragment() {
 
     private val viewModel : FilmRusViewModel by sharedViewModel()
-
     private var _binding: BottomSheetMovieDetailsBinding? = null
     private val binding get() = _binding!!
 
@@ -36,9 +35,6 @@ class MovieDetailsRuBottomSheet(val movieId:Int): BottomSheetDialogFragment() {
 
 
     }
-
-
-
 
     override fun onDestroyView() {
         super.onDestroyView()

@@ -3,7 +3,6 @@ package com.example.project1.presentation.filmRus
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.project1.domain.ItemModel
 import com.example.project1.databinding.ItemMovieBinding
 import com.example.project1.domain.tmdb.TmdbMovie
 

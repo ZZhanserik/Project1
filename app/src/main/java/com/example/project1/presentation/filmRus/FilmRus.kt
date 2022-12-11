@@ -21,6 +21,7 @@ class FilmRus : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
         binding = FilmsRusBinding.inflate(inflater, container, false)
         adapter = FilmRusAdapter(::onItemClick)
         return binding.root

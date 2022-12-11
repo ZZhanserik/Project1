@@ -2,7 +2,6 @@ package com.example.project1.presentation.filmRus
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.project1.domain.ItemModel
 import com.example.project1.databinding.ItemMovieBinding
 import com.example.project1.domain.tmdb.TmdbMovie
 import com.example.project1.utils.Constants.imageUrl
