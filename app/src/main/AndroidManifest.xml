@@ -26,6 +26,10 @@
                 android:value="" />
         </activity>
         <activity android:name="com.example.project1.data.local.MainData" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

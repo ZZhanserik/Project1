@@ -1,15 +1,13 @@
 package com.example.project1.presentation.filmKaz
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.project1.data.MovieRepository
-import com.example.project1.domain.tmdb.MovieResults
 import com.example.project1.domain.tmdb.TmdbMovie
 import kotlinx.coroutines.launch
 
-class FilmKazViewModel(
+class FilmEnglishViewModel(
     private val repository: MovieRepository
 ) : ViewModel(){
 
@@ -19,18 +17,16 @@ class FilmKazViewModel(
     val movieDetails = MutableLiveData<TmdbMovie>()
 
     init {
-        loadPopularMovies()
+        loadPopularMoviesInEnglish()
     }
 
-    fun loadPopularMovies() {
+    fun loadPopularMoviesInEnglish() {
         viewModelScope.launch {
-            val results =repository.getPopularMovies(1)
-//            for(i in 1..5){
-//                results+=repository.getPopularMovies(1)
-//                movies = movies + results[1].tmdbMovies
-//            }
-            movieCategories.value = results.tmdbMovies
-            Log.d("Get zapros", "${results.tmdbMovies}")
+            for(i in 1..5){
+                val results = repository.getPopularMovies(page = i, language = "en")
+                movies = movies + results.tmdbMovies
+            }
+            movieCategories.value = movies
         }
     }
 

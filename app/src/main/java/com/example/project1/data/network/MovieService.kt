@@ -15,6 +15,7 @@ interface MovieService {
     suspend fun getMovie(
         @Query("api_key") apiKey:String = API_KEY,
         @Query("page") page: Int,
+        @Query("language") language: String,
     ): MovieResults
 
     @GET("movie/{kino_id}")

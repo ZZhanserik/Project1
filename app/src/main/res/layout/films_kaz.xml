@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".presentation.filmKaz.FilmKaz">
+    tools:context=".presentation.filmKaz.FilmEnglish">
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_filmsKaz"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2">
+
     </androidx.recyclerview.widget.RecyclerView>
 
 

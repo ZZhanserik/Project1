@@ -5,9 +5,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project1.domain.ItemModel
 import com.example.project1.databinding.ItemMovieBinding
+import com.example.project1.domain.tmdb.TmdbMovie
 
-class FilmRusAdapter(private val mList: List<ItemModel>) : RecyclerView.Adapter<FilmRusViewHolder>() {
+class FilmRusAdapter() : RecyclerView.Adapter<FilmRusViewHolder>() {
 
+    var mList: List<TmdbMovie> = mutableListOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmRusViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)

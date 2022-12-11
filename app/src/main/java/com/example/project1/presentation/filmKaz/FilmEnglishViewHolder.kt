@@ -1,15 +1,18 @@
 package com.example.project1.presentation.filmKaz
 
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.bumptech.glide.Glide
 import com.example.project1.R
-import com.example.project1.domain.ItemModel
 import com.example.project1.databinding.ItemMovieBinding
 import com.example.project1.domain.tmdb.TmdbMovie
+import com.example.project1.utils.Constants.imageUrl
 
-class FilmKazViewHolder(val binding: ItemMovieBinding): ViewHolder(binding.root) {
+class FilmEnglishViewHolder(val binding: ItemMovieBinding): ViewHolder(binding.root) {
 
     fun bind(movie: TmdbMovie){
-        binding.image.setImageResource(R.drawable.green_mile1)
+        Glide.with(itemView.context)
+            .load(imageUrl + movie.posterPath)
+            .into(binding.poster)
         binding.title.text = movie.title
     }
 }

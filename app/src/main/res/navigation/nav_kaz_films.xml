@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/kaz_films"
-        android:name="com.example.project1.presentation.filmKaz.FilmKaz"
+        android:name="com.example.project1.presentation.filmKaz.FilmEnglish"
         android:label="fragment_main_fragment"
         tools:layout="@layout/films_kaz" >
 
