@@ -12,7 +12,7 @@ import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 class MovieDetailsEngBottomSheet(val movieId:Int): BottomSheetDialogFragment() {
 
-    private val viewModel : FilmKazViewModel by sharedViewModel()
+    private val viewModel : FilmEnglishViewModel by sharedViewModel()
 
     private var _binding: BottomSheetMovieDetailsBinding? = null
     private val binding get() = _binding!!

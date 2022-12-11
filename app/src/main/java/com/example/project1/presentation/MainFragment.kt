@@ -22,7 +22,7 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val mF = view.findViewById<ImageButton>(R.id.startButton)
+        val mF = view.findViewById<Button>(R.id.startButton)
         val dF = view.findViewById<Button>(R.id.loginButton)
         val controller = view.findNavController()
         mF.setOnClickListener { controller.navigate(R.id.fragCat) }

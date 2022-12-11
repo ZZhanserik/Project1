@@ -11,6 +11,7 @@ class FilmRusViewModel(
     private val repository: MovieRepository
 ) : ViewModel() {
 
+
     val movieCategories = MutableLiveData<List<TmdbMovie>>()
     var movies = listOf<TmdbMovie>()
     val movieDetails = MutableLiveData<TmdbMovie>()
@@ -21,7 +22,7 @@ class FilmRusViewModel(
 
     fun loadPopularMoviesInRussian() {
         viewModelScope.launch {
-            for(i in 1..5){
+            for (i in 1..5) {
                 val results = repository.getPopularMovies(page = i, language = "ru")
                 movies = movies + results.tmdbMovies
             }
@@ -29,11 +30,10 @@ class FilmRusViewModel(
         }
     }
 
-    fun loadMovieDetails(movieId:Int){
+    fun loadMovieDetails(movieId: Int) {
         viewModelScope.launch {
             val results = repository.getMovieDetails(movieId = movieId, language = "ru")
             movieDetails.value = results
         }
     }
-
 }
