@@ -7,7 +7,7 @@ import com.example.project1.domain.ItemModel
 import com.example.project1.databinding.ItemMovieBinding
 import com.example.project1.domain.tmdb.TmdbMovie
 
-class FilmRusAdapter() : RecyclerView.Adapter<FilmRusViewHolder>() {
+class FilmRusAdapter(private val onClick: (Int) -> Unit = {}) : RecyclerView.Adapter<FilmRusViewHolder>() {
 
     var mList: List<TmdbMovie> = mutableListOf()
 
@@ -22,6 +22,6 @@ class FilmRusAdapter() : RecyclerView.Adapter<FilmRusViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: FilmRusViewHolder, position: Int) {
-        holder.bind(mList[position])
+        holder.bind(mList[position], onClick)
     }
 }

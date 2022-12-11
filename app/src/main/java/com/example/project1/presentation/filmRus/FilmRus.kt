@@ -22,7 +22,7 @@ class FilmRus : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FilmsRusBinding.inflate(inflater, container, false)
-        adapter = FilmRusAdapter()
+        adapter = FilmRusAdapter(::onItemClick)
         return binding.root
     }
 
@@ -34,5 +34,8 @@ class FilmRus : Fragment() {
             adapter.notifyDataSetChanged()
         }
         binding.rvFilmsRus.adapter = adapter
+    }
+    private fun onItemClick(movieId: Int) {
+        MovieDetailsRuBottomSheet(movieId).show(parentFragmentManager, null)
     }
 }

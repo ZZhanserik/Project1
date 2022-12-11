@@ -9,10 +9,14 @@ import com.example.project1.utils.Constants.imageUrl
 
 class FilmEnglishViewHolder(val binding: ItemMovieBinding): ViewHolder(binding.root) {
 
-    fun bind(movie: TmdbMovie){
+    fun bind(movie: TmdbMovie, onClick:(Int)->Unit){
         Glide.with(itemView.context)
             .load(imageUrl + movie.posterPath)
             .into(binding.poster)
         binding.title.text = movie.title
+        binding.poster.setOnClickListener{
+            val id = movie.id ?: return@setOnClickListener
+            onClick(id)
+        }
     }
 }

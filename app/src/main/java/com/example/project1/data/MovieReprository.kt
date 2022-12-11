@@ -9,11 +9,11 @@ class MovieRepository(private val retrofit: Retrofit) {
 
     val service = retrofit.create(MovieService::class.java)
 
-    suspend fun getPopularMovies(page:Int, language:String): MovieResults {
-        return service.getMovie(page=page, language = language)
+    suspend fun getPopularMovies(page: Int, language: String): MovieResults {
+        return service.getMovie(page = page, language = language)
     }
 
-    suspend fun getMovieDetails(movieId:Int): TmdbMovie {
-        return service.getMovieDetails(movieId)
+    suspend fun getMovieDetails(movieId: Int, language: String): TmdbMovie {
+        return service.getMovieDetails(movieId = movieId, language = language)
     }
 }

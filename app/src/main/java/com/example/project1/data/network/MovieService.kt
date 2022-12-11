@@ -21,6 +21,7 @@ interface MovieService {
     @GET("movie/{kino_id}")
     suspend fun getMovieDetails(
         @Path("kino_id") movieId: Int,
-        @Query("api_key") apiKey:String = API_KEY
+        @Query("api_key") apiKey:String = API_KEY,
+        @Query("language") language: String,
     ): TmdbMovie
 }

@@ -32,7 +32,7 @@ class FilmEnglishViewModel(
 
     fun loadMovieDetails(movieId:Int){
         viewModelScope.launch {
-            val results = repository.getMovieDetails(movieId)
+            val results = repository.getMovieDetails(movieId = movieId, language = "en")
             movieDetails.value = results
         }
     }

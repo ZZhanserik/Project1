@@ -7,7 +7,7 @@ import com.example.project1.databinding.ItemMovieBinding
 import com.example.project1.domain.tmdb.TmdbMovie
 
 
-    class FilmEnglishAdapter() : RecyclerView.Adapter<FilmEnglishViewHolder>() {
+class FilmEnglishAdapter(private val onClick: (Int) -> Unit = {}) : RecyclerView.Adapter<FilmEnglishViewHolder>() {
 
         var mList: List<TmdbMovie> = mutableListOf()
 
@@ -20,6 +20,6 @@ import com.example.project1.domain.tmdb.TmdbMovie
             return mList.size
         }
         override fun onBindViewHolder(holder: FilmEnglishViewHolder, position: Int) {
-            holder.bind(mList[position])
+            holder.bind(mList[position], onClick)
         }
     }

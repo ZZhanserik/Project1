@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 
 class FilmRusViewModel(
     private val repository: MovieRepository
-) : ViewModel(){
+) : ViewModel() {
 
     val movieCategories = MutableLiveData<List<TmdbMovie>>()
     var movies = listOf<TmdbMovie>()
@@ -31,7 +31,7 @@ class FilmRusViewModel(
 
     fun loadMovieDetails(movieId:Int){
         viewModelScope.launch {
-            val results = repository.getMovieDetails(movieId)
+            val results = repository.getMovieDetails(movieId = movieId, language = "ru")
             movieDetails.value = results
         }
     }
